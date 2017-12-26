@@ -1,0 +1,46 @@
+<!--
+  Generated template for the DetalhesPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Detalhes</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+  <ion-card *ngFor="let detalhes of detalhesLocal">
+    <!-- <img [src]="detalhes.banner"> -->
+    <ion-item>
+      <!-- <ion-avatar item-start>
+        <img [src]="detalhes.imagem">
+      </ion-avatar> -->
+      <h2 class="nomeLocalDetalhe">{{ detalhes.nome }}</h2>
+    </ion-item>
+
+    <button ion-button full (click)="ligar(detalhes.telefone)">Ligar agora!</button>
+    <!-- <button ion-button full (click)="chamar(detalhes.celular)">Chamar whats</button> -->
+    <ion-card-content>
+      <p>{{ detalhes.telefone}} / {{ detalhes.celular}}</p>
+      <p>{{ detalhes.endereco}}</p>
+    </ion-card-content>
+
+    <ion-card *ngFor="let item of cardapio">
+      <ion-item (click)="abrirDetalhesItem(item.id_item)">
+        <!-- <ion-avatar item-start>
+          <img [src]="detalhes.imagem">
+        </ion-avatar> -->
+        <h2 class="nomeItemCardapio">{{ item.nome_item }}</h2>
+        <p>{{ item.valor | currency}}</p>
+      </ion-item>
+  </ion-card>
+
+  </ion-card>
+
+
+</ion-content>

@@ -1,0 +1,41 @@
+page-itens {
+}
+
+.toolbar-background {
+	color: #FFF;
+	background-color: #F55555;
+}
+
+.toolbar-title {
+	color: #FFF;
+	font-weight: 300;
+	font-family: 'Open Sans';
+	text-transform: uppercase;
+}
+
+.back-button {
+	color: #FFF;
+
+	.back-button-icon {
+		font-size: 20px;
+	}
+
+	.back-button-text {
+		display: none;
+	}
+}
+
+.card {
+	border-radius: 5px;
+	box-shadow: 0px 0px 10px 3px rgba(0,0,0,0.06);
+}
+
+h2.nomeLocal {
+	color: #FFBA00;
+	font-family: 'Open Sans';
+}
+
+.descLocal {
+	font-weight: 300;
+	font-family: 'Open Sans';
+}

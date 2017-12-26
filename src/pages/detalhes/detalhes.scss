@@ -1,0 +1,31 @@
+page-detalhes {
+  .direita{
+    float: right;
+  }
+}
+
+.card-content,
+.label,
+.button {
+	font-family: 'Open Sans';
+}
+
+.button {
+	text-transform: uppercase;
+	background-color: #4BCC73;
+}
+	.button:hover:not(.disable-hover),
+	.button.activated {background-color: #4BCC73;}
+
+h2.nomeLocalDetalhe {
+	text-align: center;
+	text-transform: uppercase;
+	color: #FFBA00;
+	font-family: 'Open Sans';
+	overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.nomeItemCardapio {
+	color: #575757;
+}
